@@ -1,0 +1,60 @@
+{
+  "name": "n8n-nodes-amazon-opensearch-aws-iam",
+  "version": "0.1.0",
+  "description": "n8n community node for querying Amazon OpenSearch with IAM role authentication",
+  "license": "MIT",
+  "homepage": "https://github.com/pokebug6/n8n-nodes-amazon-opensearch-aws-iam",
+  "keywords": [
+    "n8n-community-node-package",
+    "aws",
+    "opensearch",
+    "iam"
+  ],
+  "author": {
+    "name": "PokeBug",
+    "email": "yege0201@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pokebug6/n8n-nodes-amazon-opensearch-aws-iam"
+  },
+  "scripts": {
+    "build": "n8n-node build",
+    "build:watch": "tsc --watch",
+    "dev": "n8n-node dev",
+    "lint": "n8n-node lint",
+    "lint:fix": "n8n-node lint --fix",
+    "release": "n8n-node release",
+    "prepublishOnly": "n8n-node prerelease"
+  },
+  "files": [
+    "dist"
+  ],
+  "n8n": {
+    "n8nNodesApiVersion": 1,
+    "strict": false,
+    "credentials": [],
+    "nodes": [
+      "dist/nodes/OpenSearchAwsIam/OpenSearchAwsIam.node.js"
+    ]
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/",
+    "access": "public"
+  },
+  "dependencies": {
+    "@aws-sdk/credential-providers": "^3.1030.0",
+    "aws4": "^1.13.2"
+  },
+  "devDependencies": {
+    "@n8n/node-cli": "*",
+    "@types/aws4": "^1.11.6",
+    "eslint": "9.32.0",
+    "prettier": "3.6.2",
+    "release-it": "^19.0.4",
+    "typescript": "5.9.2"
+  },
+  "peerDependencies": {
+    "n8n-workflow": "*"
+  }
+}

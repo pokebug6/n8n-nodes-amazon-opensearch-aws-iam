@@ -1,0 +1,13 @@
+{
+	"node": "n8n-nodes-amazon-opensearch-aws-iam.openSearchAwsIam",
+	"nodeVersion": "1.0",
+	"codexVersion": "1.0",
+	"categories": ["Developer Tools"],
+	"resources": {
+		"primaryDocumentation": [
+			{
+				"url": "https://docs.aws.amazon.com/opensearch-service/latest/developerguide/"
+			}
+		]
+	}
+}
